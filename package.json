@@ -1,0 +1,32 @@
+{
+  "name": "profile-hardhat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat ignition deploy ignition/modules/UniChatProfileModule.ts",
+    "deploy:arbitrum": "hardhat ignition deploy --network arbitrum --verify --reset ignition/modules/UniChatProfileModule.ts",
+    "test": "hardhat test",
+    "clean": "hardhat clean",
+    "scripts:profile-demo": "hardhat run scripts/profile-demo.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.0.5",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.1",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "@types/node": "^22.8.5",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.4",
+    "hardhat": "^3.0.14",
+    "typescript": "~5.8.0",
+    "viem": "^2.30.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
