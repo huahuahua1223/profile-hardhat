@@ -22,3 +22,6 @@
 # Environment variables
 .env
 !.env.example
+
+# Ignition modules
+/ignition/deployments
